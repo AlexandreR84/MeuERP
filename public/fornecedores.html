@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meu ERP | Fornecedores</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body data-page="fornecedores">
+    <div class="app-shell">
+      <aside class="sidebar">
+        <div><p class="eyebrow">Meu ERP</p><h2 class="sidebar__title">Menu</h2></div>
+        <nav class="sidebar__nav">
+          <a class="sidebar__link" href="/dashboard.html">Dashboard</a>
+          <a class="sidebar__link" href="/produtos.html">Produtos</a>
+          <a class="sidebar__link" href="/clientes.html">Clientes</a>
+          <a class="sidebar__link is-active" href="/fornecedores.html">Fornecedores</a>
+          <a class="sidebar__link" href="/usuarios.html">Usuarios</a>
+          <a class="sidebar__link" href="/plano-contas.html">Plano de contas</a>
+          <a class="sidebar__link" href="/compras.html">Compras</a>
+          <a class="sidebar__link" href="/vendas.html">Vendas</a>
+          <a class="sidebar__link" href="/financeiro.html">Financeiro</a>
+        </nav>
+      </aside>
+      <main class="app-main">
+        <header class="topbar">
+          <div><p class="eyebrow">Cadastro</p><h1 class="page-title">Fornecedores</h1></div>
+          <div class="row-actions"><strong id="sessionUser">-</strong><button class="button button--ghost" type="button" id="logoutButton">Sair</button></div>
+        </header>
+        <section class="grid grid--two">
+          <article class="panel">
+            <div class="panel__header"><h3>Novo fornecedor</h3><p>Cadastro com validacao de CNPJ.</p></div>
+            <form id="fornecedorForm" class="form-stack">
+              <input type="text" name="nome" placeholder="Nome do fornecedor" required />
+              <input type="text" name="cnpj" placeholder="CNPJ" required />
+              <button class="button button--primary" type="submit">Salvar fornecedor</button>
+            </form>
+          </article>
+          <article class="panel">
+            <div class="panel__header"><h3>Lista de fornecedores</h3><p>Base para o modulo de compras.</p></div>
+            <div class="list" id="fornecedoresList"></div>
+          </article>
+        </section>
+      </main>
+    </div>
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+    <script src="/app.js"></script>
+  </body>
+  </html>

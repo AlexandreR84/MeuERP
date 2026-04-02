@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meu ERP | Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Instrument+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body data-page="dashboard">
+    <div class="app-shell">
+      <aside class="sidebar">
+        <div>
+          <p class="eyebrow">Meu ERP</p>
+          <h2 class="sidebar__title">Menu</h2>
+        </div>
+        <nav class="sidebar__nav">
+          <a class="sidebar__link is-active" href="/dashboard.html">Dashboard</a>
+          <a class="sidebar__link" href="/produtos.html">Produtos</a>
+          <a class="sidebar__link" href="/clientes.html">Clientes</a>
+          <a class="sidebar__link" href="/fornecedores.html">Fornecedores</a>
+          <a class="sidebar__link" href="/usuarios.html">Usuarios</a>
+          <a class="sidebar__link" href="/plano-contas.html">Plano de contas</a>
+          <a class="sidebar__link" href="/compras.html">Compras</a>
+          <a class="sidebar__link" href="/vendas.html">Vendas</a>
+          <a class="sidebar__link" href="/financeiro.html">Financeiro</a>
+        </nav>
+      </aside>
+      <main class="app-main">
+        <header class="topbar">
+          <div>
+            <p class="eyebrow">Painel geral</p>
+            <h1 class="page-title">Dashboard</h1>
+          </div>
+          <div class="row-actions">
+            <div class="status-card status-card--compact">
+              <span class="status-card__label">Sessao</span>
+              <strong id="sessionUser">Carregando...</strong>
+              <p id="sessionRole">-</p>
+            </div>
+            <button class="button button--ghost" type="button" id="logoutButton">Sair</button>
+          </div>
+        </header>
+        <section class="grid grid--three">
+          <article class="metric-card">
+            <span>Produtos</span>
+            <strong id="metricProdutos">0</strong>
+          </article>
+          <article class="metric-card">
+            <span>Clientes</span>
+            <strong id="metricClientes">0</strong>
+          </article>
+          <article class="metric-card">
+            <span>Fornecedores</span>
+            <strong id="metricFornecedores">0</strong>
+          </article>
+        </section>
+        <section class="grid grid--two">
+          <article class="panel">
+            <div class="panel__header">
+              <h3>Saude da API</h3>
+              <p>Estado basico do backend e da autenticacao.</p>
+            </div>
+            <div class="status-card">
+              <span class="status-card__label">API</span>
+              <strong id="healthStatus">Verificando...</strong>
+              <p id="healthText">Checando conexao com o backend.</p>
+            </div>
+          </article>
+          <article class="panel">
+            <div class="panel__header">
+              <h3>Atalhos</h3>
+              <p>Acesse rapidamente os modulos mais usados.</p>
+            </div>
+            <div class="row-actions">
+              <a class="button button--primary" href="/produtos.html">Cadastrar produto</a>
+              <a class="button button--ghost" href="/compras.html">Registrar compra</a>
+              <a class="button button--ghost" href="/vendas.html">Registrar venda</a>
+              <a class="button button--ghost" href="/financeiro.html">Ver financeiro</a>
+            </div>
+          </article>
+        </section>
+      </main>
+    </div>
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+    <script src="/app.js"></script>
+  </body>
+  </html>

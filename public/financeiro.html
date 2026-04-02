@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meu ERP | Financeiro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body data-page="financeiro">
+    <div class="app-shell">
+      <aside class="sidebar">
+        <div><p class="eyebrow">Meu ERP</p><h2 class="sidebar__title">Menu</h2></div>
+        <nav class="sidebar__nav">
+          <a class="sidebar__link" href="/dashboard.html">Dashboard</a>
+          <a class="sidebar__link" href="/produtos.html">Produtos</a>
+          <a class="sidebar__link" href="/clientes.html">Clientes</a>
+          <a class="sidebar__link" href="/fornecedores.html">Fornecedores</a>
+          <a class="sidebar__link" href="/usuarios.html">Usuarios</a>
+          <a class="sidebar__link" href="/plano-contas.html">Plano de contas</a>
+          <a class="sidebar__link" href="/compras.html">Compras</a>
+          <a class="sidebar__link" href="/vendas.html">Vendas</a>
+          <a class="sidebar__link is-active" href="/financeiro.html">Financeiro</a>
+        </nav>
+      </aside>
+      <main class="app-main">
+        <header class="topbar">
+          <div><p class="eyebrow">Financeiro</p><h1 class="page-title">Fluxo financeiro</h1></div>
+          <div class="row-actions"><strong id="sessionUser">-</strong><button class="button button--ghost" type="button" id="logoutButton">Sair</button></div>
+        </header>
+        <section class="grid grid--three">
+          <article class="metric-card">
+            <span>Entradas pendentes</span>
+            <strong id="metricEntradasPendentes">R$ 0,00</strong>
+          </article>
+          <article class="metric-card">
+            <span>Saidas pendentes</span>
+            <strong id="metricSaidasPendentes">R$ 0,00</strong>
+          </article>
+          <article class="metric-card">
+            <span>Saldo projetado</span>
+            <strong id="metricSaldoProjetado">R$ 0,00</strong>
+          </article>
+        </section>
+        <section class="panel panel--wide">
+          <div class="panel__header"><h3>Titulos gerados pelas vendas</h3><p>Baixe os recebimentos pendentes.</p></div>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>ID</th>
+                  <th>Pedido</th>
+                  <th>Cliente</th>
+                  <th>Valor</th>
+                  <th>Status</th>
+                  <th>Acao</th>
+                </tr>
+              </thead>
+              <tbody id="contasReceberTable"></tbody>
+            </table>
+          </div>
+        </section>
+        <section class="panel panel--wide">
+          <div class="panel__header"><h3>Contas a pagar</h3><p>Controle dos pagamentos originados nas compras.</p></div>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>ID</th>
+                  <th>Pedido</th>
+                  <th>Fornecedor</th>
+                  <th>Valor</th>
+                  <th>Status</th>
+                  <th>Acao</th>
+                </tr>
+              </thead>
+              <tbody id="contasPagarTable"></tbody>
+            </table>
+          </div>
+        </section>
+      </main>
+    </div>
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+    <script src="/app.js"></script>
+  </body>
+  </html>

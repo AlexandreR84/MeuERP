@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meu ERP | Compras</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body data-page="compras">
+    <div class="app-shell">
+      <aside class="sidebar">
+        <div><p class="eyebrow">Meu ERP</p><h2 class="sidebar__title">Menu</h2></div>
+        <nav class="sidebar__nav">
+          <a class="sidebar__link" href="/dashboard.html">Dashboard</a>
+          <a class="sidebar__link" href="/produtos.html">Produtos</a>
+          <a class="sidebar__link" href="/clientes.html">Clientes</a>
+          <a class="sidebar__link" href="/fornecedores.html">Fornecedores</a>
+          <a class="sidebar__link" href="/usuarios.html">Usuarios</a>
+          <a class="sidebar__link" href="/plano-contas.html">Plano de contas</a>
+          <a class="sidebar__link is-active" href="/compras.html">Compras</a>
+          <a class="sidebar__link" href="/vendas.html">Vendas</a>
+          <a class="sidebar__link" href="/financeiro.html">Financeiro</a>
+        </nav>
+      </aside>
+      <main class="app-main">
+        <header class="topbar">
+          <div><p class="eyebrow">Operacao</p><h1 class="page-title">Compras</h1></div>
+          <div class="row-actions"><strong id="sessionUser">-</strong><button class="button button--ghost" type="button" id="logoutButton">Sair</button></div>
+        </header>
+        <section class="panel">
+          <div class="panel__header"><h3>Registrar compra</h3><p>Entrada de estoque com desconto, NF e conta a pagar automatica.</p></div>
+          <form id="compraForm" class="form-stack">
+            <select id="compraFornecedor" name="fornecedor_id" required>
+              <option value="">Selecione o fornecedor</option>
+            </select>
+            <input type="number" name="desconto" min="0" step="0.01" placeholder="Desconto da compra" value="0" />
+            <input type="text" name="nf_entrada" placeholder="NF de entrada" />
+            <input type="text" name="forma_pagamento" placeholder="Forma de pagamento" />
+            <div id="compraItens" class="line-items"></div>
+            <div class="row-actions">
+              <button class="button button--ghost" type="button" id="addCompraItem">Adicionar item</button>
+              <button class="button button--primary" type="submit">Registrar compra</button>
+            </div>
+          </form>
+        </section>
+        <template id="compraItemTemplate">
+          <div class="line-item" data-kind="compra">
+            <select name="produto_id" required></select>
+            <input type="number" name="quantidade" min="1" step="1" placeholder="Qtd." required />
+            <input type="number" name="preco" min="0" step="0.01" placeholder="Preco de compra" required />
+            <button class="icon-button" type="button" data-remove-item>Remover</button>
+          </div>
+        </template>
+      </main>
+    </div>
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+    <script src="/app.js"></script>
+  </body>
+  </html>

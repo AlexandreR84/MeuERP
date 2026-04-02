@@ -1,0 +1,260 @@
+0 verbose cli C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\npm\bin\npm-cli.js
+1 info using npm@11.11.0
+2 info using node@v24.14.1
+3 silly config load:file:C:\Program Files\nodejs\node_modules\npm\npmrc
+4 silly config load:file:C:\Users\Alexa\OneDrive\Documentos\New project\.npmrc
+5 silly config load:file:C:\Users\Alexa\.npmrc
+6 silly config load:file:C:\Users\Alexa\AppData\Roaming\npm\etc\npmrc
+7 verbose title npm install pdf-parse
+8 verbose argv "install" "pdf-parse" "--no-save" "--cache" ".npm-cache"
+9 verbose logfile logs-max:10 dir:C:\Users\Alexa\OneDrive\Documentos\New project\.npm-cache\_logs\2026-03-28T19_20_30_721Z-
+10 verbose logfile C:\Users\Alexa\OneDrive\Documentos\New project\.npm-cache\_logs\2026-03-28T19_20_30_721Z-debug-0.log
+11 silly logfile done cleaning log files
+12 silly packumentCache heap:4496293888 maxSize:1124073472 maxEntrySize:562036736
+13 silly idealTree buildDeps
+14 silly fetch manifest pdf-parse@*
+15 silly packumentCache full:https://registry.npmjs.org/pdf-parse cache-miss
+16 verbose shrinkwrap failed to load node_modules/.package-lock.json out of date, updated: node_modules
+17 http fetch GET 200 https://registry.npmjs.org/pdf-parse 1174ms (cache miss)
+18 silly packumentCache full:https://registry.npmjs.org/pdf-parse set size:undefined disposed:false
+19 silly placeDep ROOT pdf-parse@2.4.5 OK for: meu-erp@1.0.0 want: *
+20 silly fetch manifest pdfjs-dist@5.4.296
+21 silly packumentCache full:https://registry.npmjs.org/pdfjs-dist cache-miss
+22 silly fetch manifest @napi-rs/canvas@0.1.80
+23 silly packumentCache full:https://registry.npmjs.org/@napi-rs%2fcanvas cache-miss
+24 http fetch GET 200 https://registry.npmjs.org/pdfjs-dist 381ms (cache miss)
+25 silly packumentCache full:https://registry.npmjs.org/pdfjs-dist set size:undefined disposed:false
+26 http fetch GET 200 https://registry.npmjs.org/@napi-rs%2fcanvas 398ms (cache miss)
+27 silly packumentCache full:https://registry.npmjs.org/@napi-rs%2fcanvas set size:undefined disposed:false
+28 silly placeDep ROOT @napi-rs/canvas@0.1.80 OK for: pdf-parse@2.4.5 want: 0.1.80
+29 silly placeDep ROOT pdfjs-dist@5.4.296 OK for: pdf-parse@2.4.5 want: 5.4.296
+30 silly fetch manifest @napi-rs/canvas-darwin-x64@0.1.80
+31 silly packumentCache full:https://registry.npmjs.org/@napi-rs%2fcanvas-darwin-x64 cache-miss
+32 silly fetch manifest @napi-rs/canvas-darwin-arm64@0.1.80
+33 silly packumentCache full:https://registry.npmjs.org/@napi-rs%2fcanvas-darwin-arm64 cache-miss
+34 silly fetch manifest @napi-rs/canvas-android-arm64@0.1.80
+35 silly packumentCache full:https://registry.npmjs.org/@napi-rs%2fcanvas-android-arm64 cache-miss
+36 silly fetch manifest @napi-rs/canvas-linux-x64-gnu@0.1.80
+37 silly packumentCache full:https://registry.npmjs.org/@napi-rs%2fcanvas-linux-x64-gnu cache-miss
+38 silly fetch manifest @napi-rs/canvas-linux-x64-musl@0.1.80
+39 silly packumentCache full:https://registry.npmjs.org/@napi-rs%2fcanvas-linux-x64-musl cache-miss
+40 silly fetch manifest @napi-rs/canvas-win32-x64-msvc@0.1.80
+41 silly packumentCache full:https://registry.npmjs.org/@napi-rs%2fcanvas-win32-x64-msvc cache-miss
+42 silly fetch manifest @napi-rs/canvas-linux-arm64-gnu@0.1.80
+43 silly packumentCache full:https://registry.npmjs.org/@napi-rs%2fcanvas-linux-arm64-gnu cache-miss
+44 silly fetch manifest @napi-rs/canvas-linux-arm64-musl@0.1.80
+45 silly packumentCache full:https://registry.npmjs.org/@napi-rs%2fcanvas-linux-arm64-musl cache-miss
+46 silly fetch manifest @napi-rs/canvas-linux-riscv64-gnu@0.1.80
+47 silly packumentCache full:https://registry.npmjs.org/@napi-rs%2fcanvas-linux-riscv64-gnu cache-miss
+48 silly fetch manifest @napi-rs/canvas-linux-arm-gnueabihf@0.1.80
+49 silly packumentCache full:https://registry.npmjs.org/@napi-rs%2fcanvas-linux-arm-gnueabihf cache-miss
+50 http fetch GET 200 https://registry.npmjs.org/@napi-rs%2fcanvas-linux-x64-gnu 383ms (cache miss)
+51 silly packumentCache full:https://registry.npmjs.org/@napi-rs%2fcanvas-linux-x64-gnu set size:undefined disposed:false
+52 http fetch GET 200 https://registry.npmjs.org/@napi-rs%2fcanvas-win32-x64-msvc 386ms (cache miss)
+53 silly packumentCache full:https://registry.npmjs.org/@napi-rs%2fcanvas-win32-x64-msvc set size:undefined disposed:false
+54 http fetch GET 200 https://registry.npmjs.org/@napi-rs%2fcanvas-darwin-arm64 409ms (cache miss)
+55 silly packumentCache full:https://registry.npmjs.org/@napi-rs%2fcanvas-darwin-arm64 set size:undefined disposed:false
+56 http fetch GET 200 https://registry.npmjs.org/@napi-rs%2fcanvas-darwin-x64 441ms (cache miss)
+57 silly packumentCache full:https://registry.npmjs.org/@napi-rs%2fcanvas-darwin-x64 set size:undefined disposed:false
+58 http fetch GET 200 https://registry.npmjs.org/@napi-rs%2fcanvas-linux-arm64-musl 501ms (cache miss)
+59 silly packumentCache full:https://registry.npmjs.org/@napi-rs%2fcanvas-linux-arm64-musl set size:undefined disposed:false
+60 http fetch GET 200 https://registry.npmjs.org/@napi-rs%2fcanvas-linux-arm64-gnu 526ms (cache miss)
+61 silly packumentCache full:https://registry.npmjs.org/@napi-rs%2fcanvas-linux-arm64-gnu set size:undefined disposed:false
+62 http fetch GET 200 https://registry.npmjs.org/@napi-rs%2fcanvas-linux-riscv64-gnu 528ms (cache miss)
+63 silly packumentCache full:https://registry.npmjs.org/@napi-rs%2fcanvas-linux-riscv64-gnu set size:undefined disposed:false
+64 http fetch GET 200 https://registry.npmjs.org/@napi-rs%2fcanvas-linux-arm-gnueabihf 540ms (cache miss)
+65 silly packumentCache full:https://registry.npmjs.org/@napi-rs%2fcanvas-linux-arm-gnueabihf set size:undefined disposed:false
+66 http fetch GET 200 https://registry.npmjs.org/@napi-rs%2fcanvas-android-arm64 547ms (cache miss)
+67 silly packumentCache full:https://registry.npmjs.org/@napi-rs%2fcanvas-android-arm64 set size:undefined disposed:false
+68 http fetch GET 200 https://registry.npmjs.org/@napi-rs%2fcanvas-linux-x64-musl 711ms (cache miss)
+69 silly packumentCache full:https://registry.npmjs.org/@napi-rs%2fcanvas-linux-x64-musl set size:undefined disposed:false
+70 silly placeDep ROOT @napi-rs/canvas-android-arm64@0.1.80 OK for: @napi-rs/canvas@0.1.80 want: 0.1.80
+71 silly placeDep ROOT @napi-rs/canvas-darwin-arm64@0.1.80 OK for: @napi-rs/canvas@0.1.80 want: 0.1.80
+72 silly placeDep ROOT @napi-rs/canvas-darwin-x64@0.1.80 OK for: @napi-rs/canvas@0.1.80 want: 0.1.80
+73 silly placeDep ROOT @napi-rs/canvas-linux-arm-gnueabihf@0.1.80 OK for: @napi-rs/canvas@0.1.80 want: 0.1.80
+74 silly placeDep ROOT @napi-rs/canvas-linux-arm64-gnu@0.1.80 OK for: @napi-rs/canvas@0.1.80 want: 0.1.80
+75 silly placeDep ROOT @napi-rs/canvas-linux-arm64-musl@0.1.80 OK for: @napi-rs/canvas@0.1.80 want: 0.1.80
+76 silly placeDep ROOT @napi-rs/canvas-linux-riscv64-gnu@0.1.80 OK for: @napi-rs/canvas@0.1.80 want: 0.1.80
+77 silly placeDep ROOT @napi-rs/canvas-linux-x64-gnu@0.1.80 OK for: @napi-rs/canvas@0.1.80 want: 0.1.80
+78 silly placeDep ROOT @napi-rs/canvas-linux-x64-musl@0.1.80 OK for: @napi-rs/canvas@0.1.80 want: 0.1.80
+79 silly placeDep ROOT @napi-rs/canvas-win32-x64-msvc@0.1.80 OK for: @napi-rs/canvas@0.1.80 want: 0.1.80
+80 silly reify moves {}
+81 silly audit bulk request {
+81 silly audit   '@types/debug': [ '4.1.13' ],
+81 silly audit   '@types/ms': [ '2.1.0' ],
+81 silly audit   '@types/node': [ '25.5.0' ],
+81 silly audit   '@types/validator': [ '13.15.10' ],
+81 silly audit   accepts: [ '1.3.8' ],
+81 silly audit   anymatch: [ '3.1.3' ],
+81 silly audit   'array-flatten': [ '1.1.1' ],
+81 silly audit   'aws-ssl-profiles': [ '1.1.2' ],
+81 silly audit   'balanced-match': [ '4.0.4' ],
+81 silly audit   'binary-extensions': [ '2.3.0' ],
+81 silly audit   'body-parser': [ '1.20.4' ],
+81 silly audit   'brace-expansion': [ '5.0.5' ],
+81 silly audit   braces: [ '3.0.3' ],
+81 silly audit   bytes: [ '3.1.2' ],
+81 silly audit   'call-bind-apply-helpers': [ '1.0.2' ],
+81 silly audit   'call-bound': [ '1.0.4' ],
+81 silly audit   chokidar: [ '3.6.0' ],
+81 silly audit   'content-disposition': [ '0.5.4' ],
+81 silly audit   'content-type': [ '1.0.5' ],
+81 silly audit   cookie: [ '0.7.2' ],
+81 silly audit   'cookie-signature': [ '1.0.7' ],
+81 silly audit   debug: [ '2.6.9', '4.4.3' ],
+81 silly audit   denque: [ '2.1.0' ],
+81 silly audit   depd: [ '2.0.0' ],
+81 silly audit   destroy: [ '1.2.0' ],
+81 silly audit   dotenv: [ '16.6.1' ],
+81 silly audit   dottie: [ '2.0.7' ],
+81 silly audit   'dunder-proto': [ '1.0.1' ],
+81 silly audit   'ee-first': [ '1.1.1' ],
+81 silly audit   encodeurl: [ '2.0.0' ],
+81 silly audit   'es-define-property': [ '1.0.1' ],
+81 silly audit   'es-errors': [ '1.3.0' ],
+81 silly audit   'es-object-atoms': [ '1.1.1' ],
+81 silly audit   'escape-html': [ '1.0.3' ],
+81 silly audit   etag: [ '1.8.1' ],
+81 silly audit   express: [ '4.22.1' ],
+81 silly audit   'fill-range': [ '7.1.1' ],
+81 silly audit   finalhandler: [ '1.3.2' ],
+81 silly audit   forwarded: [ '0.2.0' ],
+81 silly audit   fresh: [ '0.5.2' ],
+81 silly audit   fsevents: [ '2.3.3' ],
+81 silly audit   'function-bind': [ '1.1.2' ],
+81 silly audit   'generate-function': [ '2.3.1' ],
+81 silly audit   'get-intrinsic': [ '1.3.0' ],
+81 silly audit   'get-proto': [ '1.0.1' ],
+81 silly audit   'glob-parent': [ '5.1.2' ],
+81 silly audit   gopd: [ '1.2.0' ],
+81 silly audit   'has-flag': [ '3.0.0' ],
+81 silly audit   'has-symbols': [ '1.1.0' ],
+81 silly audit   hasown: [ '2.0.2' ],
+81 silly audit   'http-errors': [ '2.0.1' ],
+81 silly audit   'iconv-lite': [ '0.4.24', '0.7.2' ],
+81 silly audit   'ignore-by-default': [ '1.0.1' ],
+81 silly audit   inflection: [ '1.13.4' ],
+81 silly audit   inherits: [ '2.0.4' ],
+81 silly audit   'ipaddr.js': [ '1.9.1' ],
+81 silly audit   'is-binary-path': [ '2.1.0' ],
+81 silly audit   'is-extglob': [ '2.1.1' ],
+81 silly audit   'is-glob': [ '4.0.3' ],
+81 silly audit   'is-number': [ '7.0.0' ],
+81 silly audit   'is-property': [ '1.0.2' ],
+81 silly audit   lodash: [ '4.17.23' ],
+81 silly audit   long: [ '5.3.2' ],
+81 silly audit   'lru.min': [ '1.1.4' ],
+81 silly audit   'math-intrinsics': [ '1.1.0' ],
+81 silly audit   'media-typer': [ '0.3.0' ],
+81 silly audit   'merge-descriptors': [ '1.0.3' ],
+81 silly audit   methods: [ '1.1.2' ],
+81 silly audit   mime: [ '1.6.0' ],
+81 silly audit   'mime-db': [ '1.52.0' ],
+81 silly audit   'mime-types': [ '2.1.35' ],
+81 silly audit   minimatch: [ '10.2.4' ],
+81 silly audit   moment: [ '2.30.1' ],
+81 silly audit   'moment-timezone': [ '0.5.48' ],
+81 silly audit   ms: [ '2.0.0', '2.1.3' ],
+81 silly audit   mysql2: [ '3.20.0' ],
+81 silly audit   'named-placeholders': [ '1.1.6' ],
+81 silly audit   negotiator: [ '0.6.3' ],
+81 silly audit   nodemon: [ '3.1.14' ],
+81 silly audit   'normalize-path': [ '3.0.0' ],
+81 silly audit   'object-inspect': [ '1.13.4' ],
+81 silly audit   'on-finished': [ '2.4.1' ],
+81 silly audit   parseurl: [ '1.3.3' ],
+81 silly audit   'path-to-regexp': [ '0.1.12' ],
+81 silly audit   'pg-connection-string': [ '2.12.0' ],
+81 silly audit   picomatch: [ '2.3.2' ],
+81 silly audit   'proxy-addr': [ '2.0.7' ],
+81 silly audit   'pstree.remy': [ '1.1.8' ],
+81 silly audit   qs: [ '6.14.2' ],
+81 silly audit   'range-parser': [ '1.2.1' ],
+81 silly audit   'raw-body': [ '2.5.3' ],
+81 silly audit   readdirp: [ '3.6.0' ],
+81 silly audit   'retry-as-promised': [ '7.1.1' ],
+81 silly audit   'safe-buffer': [ '5.2.1' ],
+81 silly audit   'safer-buffer': [ '2.1.2' ],
+81 silly audit   semver: [ '7.7.4' ],
+81 silly audit   send: [ '0.19.2' ],
+81 silly audit   sequelize: [ '6.37.8' ],
+81 silly audit   'sequelize-pool': [ '7.1.0' ],
+81 silly audit   'serve-static': [ '1.16.3' ],
+81 silly audit   setprototypeof: [ '1.2.0' ],
+81 silly audit   'side-channel': [ '1.1.0' ],
+81 silly audit   'side-channel-list': [ '1.0.0' ],
+81 silly audit   'side-channel-map': [ '1.0.1' ],
+81 silly audit   'side-channel-weakmap': [ '1.0.2' ],
+81 silly audit   'simple-update-notifier': [ '2.0.0' ],
+81 silly audit   'sql-escaper': [ '1.3.3' ],
+81 silly audit   statuses: [ '2.0.2' ],
+81 silly audit   'supports-color': [ '5.5.0' ],
+81 silly audit   'to-regex-range': [ '5.0.1' ],
+81 silly audit   toidentifier: [ '1.0.1' ],
+81 silly audit   'toposort-class': [ '1.0.1' ],
+81 silly audit   touch: [ '3.1.1' ],
+81 silly audit   'type-is': [ '1.6.18' ],
+81 silly audit   undefsafe: [ '2.0.5' ],
+81 silly audit   'undici-types': [ '7.18.2' ],
+81 silly audit   unpipe: [ '1.0.0' ],
+81 silly audit   'utils-merge': [ '1.0.1' ],
+81 silly audit   uuid: [ '8.3.2' ],
+81 silly audit   validator: [ '13.15.26' ],
+81 silly audit   vary: [ '1.1.2' ],
+81 silly audit   wkx: [ '0.5.0' ],
+81 silly audit   'pdf-parse': [ '2.4.5' ],
+81 silly audit   '@napi-rs/canvas': [ '0.1.80' ],
+81 silly audit   'pdfjs-dist': [ '5.4.296' ],
+81 silly audit   '@napi-rs/canvas-android-arm64': [ '0.1.80' ],
+81 silly audit   '@napi-rs/canvas-darwin-arm64': [ '0.1.80' ],
+81 silly audit   '@napi-rs/canvas-darwin-x64': [ '0.1.80' ],
+81 silly audit   '@napi-rs/canvas-linux-arm-gnueabihf': [ '0.1.80' ],
+81 silly audit   '@napi-rs/canvas-linux-arm64-gnu': [ '0.1.80' ],
+81 silly audit   '@napi-rs/canvas-linux-arm64-musl': [ '0.1.80' ],
+81 silly audit   '@napi-rs/canvas-linux-riscv64-gnu': [ '0.1.80' ],
+81 silly audit   '@napi-rs/canvas-linux-x64-gnu': [ '0.1.80' ],
+81 silly audit   '@napi-rs/canvas-linux-x64-musl': [ '0.1.80' ],
+81 silly audit   '@napi-rs/canvas-win32-x64-msvc': [ '0.1.80' ]
+81 silly audit }
+82 http cache @napi-rs/canvas-win32-x64-msvc@https://registry.npmjs.org/@napi-rs/canvas-win32-x64-msvc/-/canvas-win32-x64-msvc-0.1.80.tgz 0ms (cache hit)
+83 http cache @napi-rs/canvas@https://registry.npmjs.org/@napi-rs/canvas/-/canvas-0.1.80.tgz 0ms (cache hit)
+84 silly tarball no local data for @napi-rs/canvas-win32-x64-msvc@https://registry.npmjs.org/@napi-rs/canvas-win32-x64-msvc/-/canvas-win32-x64-msvc-0.1.80.tgz. Extracting by manifest.
+85 http cache pdf-parse@https://registry.npmjs.org/pdf-parse/-/pdf-parse-2.4.5.tgz 0ms (cache hit)
+86 http cache pdfjs-dist@https://registry.npmjs.org/pdfjs-dist/-/pdfjs-dist-5.4.296.tgz 0ms (cache hit)
+87 silly tarball no local data for @napi-rs/canvas@https://registry.npmjs.org/@napi-rs/canvas/-/canvas-0.1.80.tgz. Extracting by manifest.
+88 silly tarball no local data for pdf-parse@https://registry.npmjs.org/pdf-parse/-/pdf-parse-2.4.5.tgz. Extracting by manifest.
+89 silly tarball no local data for pdfjs-dist@https://registry.npmjs.org/pdfjs-dist/-/pdfjs-dist-5.4.296.tgz. Extracting by manifest.
+90 http fetch GET 200 https://registry.npmjs.org/@napi-rs/canvas/-/canvas-0.1.80.tgz 148ms (cache miss)
+91 http fetch POST 200 https://registry.npmjs.org/-/npm/v1/security/advisories/bulk 304ms
+92 silly audit report {
+92 silly audit report   'path-to-regexp': [
+92 silly audit report     {
+92 silly audit report       id: 1115527,
+92 silly audit report       url: 'https://github.com/advisories/GHSA-37ch-88jc-xwx2',
+92 silly audit report       title: 'path-to-regexp vulnerable to Regular Expression Denial of Service via multiple route parameters',
+92 silly audit report       severity: 'high',
+92 silly audit report       vulnerable_versions: '<0.1.13',
+92 silly audit report       cwe: [Array],
+92 silly audit report       cvss: [Object]
+92 silly audit report     }
+92 silly audit report   ]
+92 silly audit report }
+93 silly packumentCache corgi:https://registry.npmjs.org/path-to-regexp cache-miss
+94 http fetch GET 200 https://registry.npmjs.org/path-to-regexp 81ms (cache miss)
+95 silly packumentCache corgi:https://registry.npmjs.org/path-to-regexp set size:undefined disposed:false
+96 silly packumentCache corgi:https://registry.npmjs.org/express cache-miss
+97 http fetch GET 200 https://registry.npmjs.org/express 142ms (cache miss)
+98 silly packumentCache corgi:https://registry.npmjs.org/express set size:undefined disposed:false
+99 http fetch GET 200 https://registry.npmjs.org/pdf-parse/-/pdf-parse-2.4.5.tgz 890ms (cache miss)
+100 http fetch GET 200 https://registry.npmjs.org/@napi-rs/canvas-win32-x64-msvc/-/canvas-win32-x64-msvc-0.1.80.tgz 2207ms (cache miss)
+101 http fetch GET 200 https://registry.npmjs.org/pdfjs-dist/-/pdfjs-dist-5.4.296.tgz 3549ms (cache miss)
+102 silly ADD node_modules/@napi-rs/canvas-win32-x64-msvc
+103 silly ADD node_modules/pdfjs-dist
+104 silly ADD node_modules/@napi-rs/canvas
+105 silly ADD node_modules/pdf-parse
+106 verbose cwd C:\Users\Alexa\OneDrive\Documentos\New project
+107 verbose os Windows_NT 10.0.26200
+108 verbose node v24.14.1
+109 verbose npm  v11.11.0
+110 verbose exit 0
+111 info ok

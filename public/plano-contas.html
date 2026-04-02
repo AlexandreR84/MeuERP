@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meu ERP | Plano de Contas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body data-page="plano-contas">
+    <div class="app-shell">
+      <aside class="sidebar">
+        <div><p class="eyebrow">Meu ERP</p><h2 class="sidebar__title">Menu</h2></div>
+        <nav class="sidebar__nav">
+          <a class="sidebar__link" href="/dashboard.html">Dashboard</a>
+          <a class="sidebar__link" href="/produtos.html">Produtos</a>
+          <a class="sidebar__link" href="/clientes.html">Clientes</a>
+          <a class="sidebar__link" href="/fornecedores.html">Fornecedores</a>
+          <a class="sidebar__link" href="/usuarios.html">Usuarios</a>
+          <a class="sidebar__link is-active" href="/plano-contas.html">Plano de contas</a>
+          <a class="sidebar__link" href="/compras.html">Compras</a>
+          <a class="sidebar__link" href="/vendas.html">Vendas</a>
+          <a class="sidebar__link" href="/financeiro.html">Financeiro</a>
+        </nav>
+      </aside>
+      <main class="app-main">
+        <header class="topbar">
+          <div><p class="eyebrow">Administracao</p><h1 class="page-title">Plano de contas</h1></div>
+          <div class="row-actions"><strong id="sessionUser">-</strong><button class="button button--ghost" type="button" id="logoutButton">Sair</button></div>
+        </header>
+        <section class="grid grid--two">
+          <article class="panel">
+            <div class="panel__header"><h3>Nova conta</h3><p>Estrutura contabil hierarquica.</p></div>
+            <form id="planoContaForm" class="form-stack">
+              <input type="text" name="codigo" placeholder="Codigo da conta" required />
+              <input type="text" name="nome" placeholder="Nome da conta" required />
+              <select name="tipo" required>
+                <option value="">Selecione o tipo</option>
+                <option value="ATIVO">ATIVO</option>
+                <option value="PASSIVO">PASSIVO</option>
+                <option value="PATRIMONIO_LIQUIDO">PATRIMONIO LIQUIDO</option>
+                <option value="RECEITA">RECEITA</option>
+                <option value="DESPESA">DESPESA</option>
+              </select>
+              <select name="conta_pai_id" id="planoContaPai">
+                <option value="">Sem conta pai</option>
+              </select>
+              <button class="button button--primary" type="submit">Salvar conta</button>
+            </form>
+          </article>
+          <article class="panel">
+            <div class="panel__header"><h3>Lista de contas</h3><p>Base para os relatorios contabeis.</p></div>
+            <div class="list" id="planoContasList"></div>
+          </article>
+        </section>
+      </main>
+    </div>
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+    <script src="/app.js"></script>
+  </body>
+  </html>
